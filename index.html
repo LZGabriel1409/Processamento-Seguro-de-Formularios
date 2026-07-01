@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Evento - Seguro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow border-0">
+          <div class="card-header bg-primary text-white text-center py-3">
+            <h4 class="mb-0">Inscrição no Evento</h4>
+          </div>
+          <div class="card-body p-4">
+            <form action="processa.php" method="POST">
+              <div class="mb-3">
+                <label class="form-label fw-bold">Nome Completo</label>
+                <input type="text" name="nome" class="form-control" placeholder="Ex: Jorge Silva" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold">E-mail</label>
+                <input name="email" class="form-control" placeholder="exemplo@email.com" required />
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Idade</label>
+                  <input type="number" name="idade" class="form-control" placeholder="18 a 60" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Site Pessoal/LinkedIn</label>
+                  <input name="website" class="form-control" placeholder="https://..." />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">
+                Finalizar Cadastro
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
